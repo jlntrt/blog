@@ -1,6 +1,8 @@
 require "crypto/bcrypt/password"
 
 class User < Granite::Base
+  has_many :posts
+
   adapter pg
   table_name users
 
@@ -17,7 +19,7 @@ class User < Granite::Base
     user
   end
 
-  def nickname(nickname)
+  def nickname(nickname = "")
     self.nickname = nickname
 
     self

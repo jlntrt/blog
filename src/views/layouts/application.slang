@@ -8,7 +8,7 @@ html
     link rel="stylesheet" href="/dist/main.bundle.css"
     link rel="apple-touch-icon" href="/favicon.png"
     link rel="icon" href="/favicon.png"
-    link rel="icon" type="image/x-icon" href="/favicon.ico"
+    link type="image/x-icon" href="/favicon.ico"
 
   body
     == content
